@@ -12,7 +12,7 @@ import argparse
 
 # Constants, these are the main "settings" for the image
 WIDTH, HEIGHT, MARGIN, FRAMES = 4096, 2048, 256, 1
-FONT_PATH = "fonts/Rubik/Rubik-VariableFont_wght.ttf"
+FONT_PATH = "fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf"
 AUXILIARY_FONT_PATH = None
 GRID_VIEW = False
 
@@ -24,7 +24,7 @@ args = parser.parse_args()
 
 # Draws a grid
 def grid():
-    stroke(1, 0, 0, 1)
+    stroke(1, 0, 0, 0.75)
     strokeWidth(2)
     STEP_X, STEP_Y = 0, 0
     INCREMENT_X, INCREMENT_Y = MARGIN / 2, MARGIN / 2
@@ -37,6 +37,24 @@ def grid():
         STEP_Y += INCREMENT_Y
     polygon((WIDTH / 2, 0), (WIDTH / 2, HEIGHT))
     polygon((0, HEIGHT / 2), (WIDTH, HEIGHT / 2))
+
+
+# Draws a grid
+def graphicGrid():
+    fill(None)
+    stroke(0.99)
+    strokeWidth(4)
+    STEP_X, STEP_Y = 0, 0
+    INCREMENT_X, INCREMENT_Y = MARGIN / 2, MARGIN / 2
+    rect(MARGIN, MARGIN, WIDTH - (MARGIN * 2), HEIGHT - (MARGIN * 2))
+    for x in range(29):
+        polygon((MARGIN + STEP_X, MARGIN), (MARGIN + STEP_X, HEIGHT - MARGIN))
+        STEP_X += INCREMENT_X
+    for y in range(13):
+        polygon((MARGIN, MARGIN + STEP_Y), (WIDTH - MARGIN, MARGIN + STEP_Y))
+        STEP_Y += INCREMENT_Y
+    #polygon((WIDTH / 2, 0), (WIDTH / 2, HEIGHT))
+    #polygon((0, HEIGHT / 2), (WIDTH, HEIGHT / 2))
 
 # Remap input range to VF axis range
 # This is useful for animation
@@ -51,6 +69,7 @@ def remap(value, inputMin, inputMax, outputMin, outputMax):
 def draw_background():
     newPage(WIDTH, HEIGHT)
     fill(0.11)
+    # fill(1,0,0)
     rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
         grid()
@@ -63,30 +82,41 @@ def draw_main_text():
     fill(0.95)
     stroke(None)
     font(FONT_PATH)
-    # for axis, data in listFontVariations().items():
-    #     print((axis, data))
-    fontSize(512)
+    for axis, data in listFontVariations().items():
+        print((axis, data))
+    fontSize(510)
     fontVariations(wght = 900)
     # Adjust this line to center main text manually.
     # TODO: This should be done automatically when drawbot-skia
     # has support for textBox() and FormattedString
 
-    text("Rubik", ((MARGIN-4)+MARGIN*1.4, MARGIN*2.2))
-    text("بالعربي", ((MARGIN*13.58), MARGIN*4.25))
-    fontSize(110)
-    #fontVariations(wght = 500)
-    #text("“IN ARABIC”", ((MARGIN*10.32), MARGIN*3.85))
-    fontVariations(wght = 800)
-    text("“IN ARABIC”", ((MARGIN*10.23), MARGIN*3.8))
-
-# Divider lines
-def draw_divider_lines():
-    stroke(1)
-    strokeWidth(4)
-    lineCap("round")
-    line((MARGIN+64, HEIGHT - MARGIN*1.5), (WIDTH - MARGIN-64, HEIGHT - MARGIN*1.5))
-    line((MARGIN+64, MARGIN + (MARGIN / 2)), (WIDTH - MARGIN-64, MARGIN + (MARGIN / 2)))
+    #graphicGrid()
     stroke(None)
+
+    step = 0
+    wght_step = 400
+    fill(0.9,0.22,0.2)
+    for i in range(9):
+        fontVariations(wdth = 97)
+        fontVariations(wght = wght_step)
+        text("Bricolage Grotesque", (MARGIN*(-0.1), MARGIN*(step*1.5)))
+        step += 1
+        wght_step += 100
+
+    fill(0.95)
+    fontVariations(wdth = 75)
+    fontVariations(wght = 900)
+    #text("Bricolage", (MARGIN*0.95, MARGIN*3.325))
+
+    step = 0
+    wght_step = 400
+    fill(0.9,0.22,0.2)
+    for i in range(9):
+        fontVariations(wdth = 75)
+        fontVariations(wght = wght_step)
+        #text("Bricolage", (MARGIN*0, MARGIN*(step*1.5)))
+        step += 1
+        wght_step += 100
 
 # Build and save the image
 if __name__ == "__main__":

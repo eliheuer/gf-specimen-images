@@ -50,7 +50,8 @@ def remap(value, inputMin, inputMax, outputMin, outputMax):
 # Draw the page/frame and a grid if "GRID_VIEW" is set to "True"
 def draw_background():
     newPage(WIDTH, HEIGHT)
-    fill(0.11)
+    fill(0.025)
+    fill(0.0, 0.9, 0.46)
     rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
         grid()
@@ -60,7 +61,8 @@ def draw_background():
 # Draw main text
 #GRID_VIEW = True
 def draw_main_text():
-    fill(0.95)
+    fill(0.99)
+    fill(0.11)
     stroke(None)
     font(FONT_PATH)
     # for axis, data in listFontVariations().items():

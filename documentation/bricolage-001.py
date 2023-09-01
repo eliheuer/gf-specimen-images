@@ -68,7 +68,7 @@ def remap(value, inputMin, inputMax, outputMin, outputMax):
 # Draw the page/frame and a grid if "GRID_VIEW" is set to "True"
 def draw_background():
     newPage(WIDTH, HEIGHT)
-    fill(0.025)
+    fill(0.11)
     # fill(1,0,0)
     rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
@@ -95,16 +95,18 @@ def draw_main_text():
 
     step = 0
     wght_step = 400
-    fill(1,0.2,0)
-    fill(0,0.25,1)
+    fill(0.9,0.22,0.2)
+    #fill(0.25)
+    fill(0.27,0.35,0.39)
+    fill(0.3)
     for i in range(9):
-        fontVariations(wdth = 100)
+        fontVariations(wdth = 97)
         fontVariations(wght = wght_step)
         text("Grotesque", (MARGIN*7.4, MARGIN*(step*1.5)))
         step += 1
         wght_step += 100
 
-    fill(0.975)
+    fill(0.95)
     fontVariations(wdth = 75)
     #text("Bricolage", (MARGIN*0.95, MARGIN*3.5))
     fontSize(1180)
