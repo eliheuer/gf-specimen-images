@@ -36,7 +36,10 @@ test: venv build.stamp
 proof: venv build.stamp
 	. venv/bin/activate; mkdir -p out/ out/proof; diffenator2 proof $(shell find fonts/ttf -type f) -o out/proof
 
-images: venv build.stamp $(DRAWBOT_OUTPUT)
+images: venv
+	for db in documentation/*.py; do python3 "$$db" --output "$${db%.py}.png"; done
+
+images-depricated: venv build.stamp $(DRAWBOT_OUTPUT)
 	git add documentation/*.png && git commit -m "Rebuild images" documentation/*.png
 
 %.png: %.py build.stamp
