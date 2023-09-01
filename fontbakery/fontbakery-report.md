@@ -1015,7 +1015,7 @@ Width = 548:
 notequal
 
 Width = 542:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -1532,7 +1532,7 @@ Width = 547:
 notequal
 
 Width = 539:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -2258,7 +2258,7 @@ Width = 550:
 notequal
 
 Width = 551:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -2599,7 +2599,7 @@ Width = 550:
 notequal
 
 Width = 556:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -2998,7 +2998,7 @@ Width = 545:
 notequal
 
 Width = 542:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -3304,7 +3304,7 @@ Width = 548:
 notequal
 
 Width = 551:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -4323,7 +4323,7 @@ Width = 570:
 equal
 
 Width = 576:
-logicalnot, multiply
+multiply, logicalnot
 
 Width = 562:
 plusminus
@@ -4341,7 +4341,7 @@ Width = 544:
 notequal
 
 Width = 539:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
@@ -4705,7 +4705,7 @@ Width = 551:
 approxequal, notequal
 
 Width = 556:
-greaterequal, lessequal
+lessequal, greaterequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
