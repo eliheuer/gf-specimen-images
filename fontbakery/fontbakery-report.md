@@ -4323,7 +4323,7 @@ Width = 570:
 equal
 
 Width = 576:
-logicalnot, multiply
+multiply, logicalnot
 
 Width = 562:
 plusminus
@@ -4702,7 +4702,7 @@ Width = 642:
 minus
 
 Width = 551:
-approxequal, notequal
+notequal, approxequal
 
 Width = 556:
 greaterequal, lessequal
