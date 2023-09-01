@@ -4702,7 +4702,7 @@ Width = 642:
 minus
 
 Width = 551:
-notequal, approxequal
+approxequal, notequal
 
 Width = 556:
 greaterequal, lessequal
