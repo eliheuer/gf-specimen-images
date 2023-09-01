@@ -6,6 +6,7 @@
 ![003](documentation/rubik-003.png)
 ![001](documentation/bricolage-001.png)
 ![001](documentation/bricolage-002.png)
+![001](documentation/bricolage-003.png)
 
 ## License
 

@@ -69,7 +69,8 @@ def remap(value, inputMin, inputMax, outputMin, outputMax):
 def draw_background():
     newPage(WIDTH, HEIGHT)
     fill(0.11)
-    # fill(1,0,0)
+    fill(0.9,0.22,0.2)
+    fill(1, 0.84, 0)
     rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
         grid()
@@ -79,12 +80,12 @@ def draw_background():
 # Draw main text
 #GRID_VIEW = True
 def draw_main_text():
-    fill(0.95)
+    fill(0.11)
     stroke(None)
     font(FONT_PATH)
     for axis, data in listFontVariations().items():
         print((axis, data))
-    fontSize(530)
+    fontSize(510)
     fontVariations(wght = 900)
     # Adjust this line to center main text manually.
     # TODO: This should be done automatically when drawbot-skia
@@ -95,23 +96,17 @@ def draw_main_text():
 
     step = 0
     wght_step = 400
-    fill(0.9,0.22,0.2)
-    #fill(0.25)
-    fill(0.27,0.35,0.39)
-    fill(0.3)
     for i in range(9):
         fontVariations(wdth = 97)
         fontVariations(wght = wght_step)
-        text("Grotesque", (MARGIN*7.4, MARGIN*(step*1.5)))
+        text("Bricolage Grotesque", (MARGIN*(-0.1), MARGIN*(step*1.5)))
         step += 1
         wght_step += 100
 
     fill(0.95)
-    fill(0.0, 0.9, 0.46)
     fontVariations(wdth = 75)
-    #text("Bricolage", (MARGIN*0.95, MARGIN*3.5))
-    fontSize(1180)
-    text("Bricolage", (MARGIN*0.90, MARGIN*2.5))
+    fontVariations(wght = 900)
+    #text("Bricolage", (MARGIN*0.95, MARGIN*3.325))
 
 
 # Build and save the image
