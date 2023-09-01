@@ -1,6 +1,8 @@
 # GF Specimen Images Demo
 `$ make images` will produce new png images from Python source files.
 
+Full resolution images and Python source files are in the [documentation](documentation) directory.
+
 ![001](documentation/rubik-001.png)
 ![002](documentation/rubik-002.png)
 ![003](documentation/rubik-003.png)
