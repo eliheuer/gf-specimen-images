@@ -107,7 +107,8 @@ def draw_main_text():
         wght_step += 100
 
     fill(0.95)
-    fill(0.0, 0.9, 0.46)
+    #fill(1, 0.84, 0)
+    #fill(0.0, 0.9, 0.46)
     fontVariations(wdth = 75)
     #text("Bricolage", (MARGIN*0.95, MARGIN*3.5))
     fontSize(1180)

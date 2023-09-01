@@ -103,20 +103,6 @@ def draw_main_text():
         step += 1
         wght_step += 100
 
-    fill(0.95)
-    fontVariations(wdth = 75)
-    fontVariations(wght = 900)
-    #text("Bricolage", (MARGIN*0.95, MARGIN*3.325))
-
-    step = 0
-    wght_step = 400
-    fill(0.9,0.22,0.2)
-    for i in range(9):
-        fontVariations(wdth = 75)
-        fontVariations(wght = wght_step)
-        #text("Bricolage", (MARGIN*0, MARGIN*(step*1.5)))
-        step += 1
-        wght_step += 100
 
 # Build and save the image
 if __name__ == "__main__":
